@@ -20,17 +20,28 @@ use Illuminate\Support\Carbon;
  */
 class NullCarbon extends Carbon
 {
+    /**
+     * Override Carbon's contruct.
+     */
+    public function __construct()
+    {
+        parent::__construct(null, null);
+
+        $this->timestamp = 0;
+    }
 
     /**
      * Override Carbon's format.
      *
      * @param string $format
      *
+     * @return null
+     *
      * @SuppressWarnings(PHPMD.UnusedFormalParameter)
      */
     public function format($format)
     {
-        return '';
+        return null;
     }
 
     /**
