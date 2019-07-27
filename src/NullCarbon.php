@@ -23,7 +23,7 @@ class NullCarbon extends Carbon
     /**
      * Override Carbon's contruct.
      */
-    public function __construct()
+    public function __construct($time = null, $tz = null)
     {
         parent::__construct(null, null);
 
