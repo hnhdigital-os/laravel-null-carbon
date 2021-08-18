@@ -41,7 +41,7 @@ class NullCarbon extends Carbon
      */
     public function format($format)
     {
-        return null;
+        return '';
     }
 
     /**
