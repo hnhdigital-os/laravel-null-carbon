@@ -18,8 +18,8 @@ This package is based on GeneaLab's [Null-Carbon For Laravel](https://github.com
 
 ## Prerequisites
 
-* PHP >= 7.1
-* Laravel >= 5.5
+* PHP >= 8.0.2
+* Laravel >= 9.0
 
 ## Installation
 
